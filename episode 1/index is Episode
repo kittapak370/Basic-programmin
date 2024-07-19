@@ -1,7 +1,7 @@
 const firstname: string = "kittapak"
 var y: number = 10
 y = 20
-var อยากกลับบ้านไหม: boolean = true
+var อยากกลับบ้านไหม: boolean = false
 
 
 console.log(firstname)
@@ -11,6 +11,6 @@ console.log(อยากกลับบ้านไหม)
 const a: number = 10
 const b: number = 20
 
-console.log(a=b)
+console.log(a===b)
 console.log(a>b)
 console.log(a<=b)
