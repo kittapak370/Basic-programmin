@@ -14,3 +14,7 @@ const b: number = 20
 console.log(a===b)
 console.log(a>b)
 console.log(a<=b)
+
+fuction add(b: number, c: number) {
+    return b + c
+}
