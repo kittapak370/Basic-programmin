@@ -1,19 +1,19 @@
-const firstname: string = "kittapak"
-var y: number = 10
+const firstname: string = "kittapak" // กำหนดค่าคงตัวให้ตัวเเปรเเบบ string ให้ firstname
+var y: number = 10 // กำหนดตัวเเปรเป็น y
 y = 20
-var อยากกลับบ้านไหม: boolean = false
+var อยากกลับบ้านไหม: boolean = false // กำหนดตัวเเปรค่าความจริงให้ อยากกลับบ้านไหม
 
 
-console.log(firstname)
-console.log(y)
-console.log(อยากกลับบ้านไหม)
+console.log(firstname) // เเสดงผล firstname
+console.log(y) // เเสดงผล y
+console.log(อยากกลับบ้านไหม) // เเสดงผล อยากกลับบ้านไหม
 
-const a: number = 10
-const b: number = 20
+const a: number = 10 // กำหนดค่าคงตัวให้ตัวเเปร number ให้ a
+const b: number = 20 // กำหนดค่าคงตัวให้ตัวเเปร number ให้ b
 
-console.log(a===b)
-console.log(a>b)
-console.log(a<=b)
+console.log(a===b) เเสดงผล // aเท่ากับb?
+console.log(a>b) เเสดงผล // a > b?
+console.log(a<=b) เเสดงผล // a < b?
 
 fuction add(b: number, c: number) {
     return b + c
