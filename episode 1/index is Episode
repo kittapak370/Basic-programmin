@@ -15,6 +15,6 @@ console.log(a===b) เเสดงผล // aเท่ากับb?
 console.log(a>b) เเสดงผล // a > b?
 console.log(a<=b) เเสดงผล // a < b?
 
-fuction add(b: number, c: number) {
-    return b + c
+fuction add(b: number, c: number) { // เพิ่มตัวเลขnumber
+    return b + c // เอากลับมาบวกตัวเลข
 }
