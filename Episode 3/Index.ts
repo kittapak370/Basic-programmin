@@ -56,4 +56,4 @@ function bmi(height: number, weight: number) {
     return 'อวบมาก'
   }
 }
-console.log (bmi(2.19,56) ) // การบ้าน BMI
+console.log (bmi(1.78,56) ) // การบ้าน BMI
