@@ -58,8 +58,62 @@ const me = {
     subdistrict: 'mollow',
     district: 'Utopian1',
     province: 'tungjask',
-    zipcode: '12345'
-    telephone: '0999999999',
+    zipcode: '12345',
+    Tel : '0999999999',
     numberphone:'0990000',
-    email:user888@hotmail.com
+    email: 'user888@hotmail.com',
 }
+
+const aboutme = {
+    firstname: 'ufa888',
+    lastname: 'tumjaibet',
+    age: '30',
+    currentaddressnumber: '1001',
+    village: '1',
+    road: 'utopian',
+    subdistrict: 'mollow',
+    district: 'Utopian1',
+    province: 'tungjask',
+    zipcode: '12345',
+    Tel : '0999999999',
+    numberphone:'0990000',
+    email: 'user888@hotmail.com',
+    bestfriend : {
+        bFriendname : 'atipat',
+        blastname : 'lebron',
+        btitle : 'Dekpre1',
+    }
+}
+console.log(aboutme.bestfriend.btitle)
+
+const myFriend = [{
+    firstname: 'atipat',
+    lastname: 'le del',
+    AKA: 'superman',
+    age: 18
+}, {
+    firstname: 'kittapak',
+    lastname: 'kambudda',
+    AKA: 'mairu',
+    age: '18',
+}, {
+    fistname: 'Time',
+    lastname: 'tai',
+    AKA: 'Superman',
+    age: 19
+}, {
+    firstname: 'Forthlee',
+    lastname: 'lee01',
+    AKA: 'Supergirl',
+    age: 20
+}]
+
+console.log(myFriend[2].firstname)
+
+const MyfriendAKA= myFriend.map(function(element, index){
+    return ({
+        firstname: element.firstname,
+        AKA: element.AKA
+    })
+})
+
