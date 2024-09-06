@@ -49,8 +49,17 @@ console.log ("ใส่ตัวหน้า", AnimalToArray)
 
 
 const me = {
-    firstname: 'kittapak',
-    lastname: 'kambudda',
-    age: '18',
-    numberphone:'0991955169',
+    firstname: 'ufa888',
+    lastname: 'tumjaibet',
+    age: '30',
+    currentaddressnumber: '1001',
+    village: '1',
+    road: 'utopian',
+    subdistrict: 'mollow',
+    district: 'Utopian1',
+    province: 'tungjask',
+    zipcode: '12345'
+    telephone: '0999999999',
+    numberphone:'0990000',
+    email:user888@hotmail.com
 }
