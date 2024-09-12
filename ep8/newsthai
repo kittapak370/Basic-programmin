@@ -473,6 +473,7 @@ const newss = news.results.filter(function(element, index){
 
 const newsmap = new.results.map(function(element, index) {
    return ({
+
            title: element.title,
            link: element.link,
            description: element.description,
