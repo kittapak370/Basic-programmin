@@ -468,7 +468,17 @@ const news = {
 }
 
 const newss = news.results.filter(function(element, index){
-    return element.language === 'thai'
+    return element.language === "thai"&& element === "thaipbs"
 })
 
+const newsmap = new.results.map(function(element, index) {
+   return ({
+           title: element.title,
+           link: element.link,
+           description: element.description,
+           image: element.image,
+    })
+
 console.log(newss)
+conesole.log(newsmap)
+            
