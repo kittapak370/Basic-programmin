@@ -1,0 +1,44 @@
+const databases = [
+    {
+        email: 'use@gmail.com',
+        password: 'Loveyou1+++'
+    },
+    {
+        email: 'punn@gmail.com',
+        password: '12456++8'
+    }
+]
+
+function decryptPassword(password: string) {
+    return password.replaceAll('+', 'u').replaceAll('*', '6').replaceAll('^', '0')
+}
+
+const database = [
+    {
+        email: 'user@gmail.com',
+        password: 'Okay011'
+    },
+    {
+        email: 'punn@gmail.com',
+        password: 'okay112'
+    }
+]
+
+function login(email: string,password: string) {
+    const user = database.filter(function(element, index) {
+        return element.email === email
+    })
+    if (user.length > 0) {
+        const realpassword = decryptPassword(user[0].password)
+        if (realpassword === password) {
+            alert('เข้าสู้ระบบสำเร็จ ยินดีต้อนรับ')
+        } else {
+            alert('รหัสผ่านไม่ถูกต้อง โปรดตรวจสอบ')
+        }
+
+    } else {
+        alert('ไม่พบผู้ใช้งานในระบบ')
+    }
+}
+
+login('punn@gmail.com', 'okay112')
