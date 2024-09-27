@@ -10022,7 +10022,24 @@ const products = {
                 salePrice: Number(element.price) - element.discount
             })
         })
-    }
+    },
+    salepricewhileloop: function() {
+        const availableProducts = []
+        let i = 0
+        while (i < this.Data.length) {
+            if (this.data[i].availability === 'Y') {
+                availableProducts.push(this.data[i])
+            }
+            i++
+        }
+        return availableProducts.map(function (element, index) {
+            return ({
+                product_name: element.product_name,
+                sku: element.sku,
+                salePrice: Number(element.price) - element.discount
+            })
+        })  
+    },
 }
 
 console.log(products.salePrice())
