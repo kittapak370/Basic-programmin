@@ -1,0 +1,23 @@
+const database = [
+    {
+        email: 'punn@gmail.com',
+        password: 'punn0991955164'
+    }
+]
+
+function login(email: string, password: string) {
+    const user = database.filter(function (element, index) {
+        return element.email === email
+    })
+    if (user.length > 0) {
+        if(user[0].password === password) {
+            console.log('เข้าสู่ระบบ')
+        } else {
+            console.log('รหัสผ่านไม่ถูก')
+        }
+    } else {
+        console.log('ไม่มีผู้ใช้งาน')
+    }
+}
+
+login('punn@gmail.com','punn0991955164')
