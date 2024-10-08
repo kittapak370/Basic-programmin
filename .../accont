@@ -1,0 +1,23 @@
+const accout = {
+    name: 'ปุน',
+    balance: 0,
+    deposit: function(amount: number) {
+        if (amount < 0) {
+            console.log('ระบุจำนวนเงิน')
+            return
+        }
+        this.balance = this.balance + amount
+        console.log('ถอนเงิน' + amount + 'ยอดเงินคงเหลือ' + this.balance)
+    },
+    withdraw: function(amount: number) {
+        if (amount < this.balance) {
+            console.log('เงินไม่พอ', 'ยอดเงินไม่พอ' + this.balance)
+            return
+       }
+       this.balance = this.balance - amount
+       console.log('ถอนเงิน' + amount + 'เงินไม่เพียงพอ' + this.balance)
+    }
+}
+
+accout.deposit(500)
+accout.withdraw(1)

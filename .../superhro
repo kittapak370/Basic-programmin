@@ -1,0 +1,13 @@
+const names = ["John","Punn","pann"];
+
+function CutNameWithNap(array: string[]) {
+    return array.map(function(element, index) {
+        const cutName = element.split(" ")
+        return {
+            firstname: cutName[0],
+            lastname: cutName [1]
+        }
+    })
+}
+
+console.log(CutNameWithNap(names))
